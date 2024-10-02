@@ -1,0 +1,97 @@
+
+.headerTask{
+    margin-top: 3rem;
+    width: 45rem;
+    justify-content: center;
+}
+.numberTask{
+    display: flex;
+    justify-content: space-between;
+}
+
+.createTasks{
+    color: var(--blue);
+    margin-right: 0.5rem;
+}
+
+.doneTasks{
+    color: var(--purple);
+    margin-right: 0.5rem;
+}
+
+.fillTask{
+    margin: 3rem auto;
+}
+
+.emptyTask{
+    display: grid;
+    justify-content: center;
+    max-width: 45rem;
+    margin: 3rem auto;
+    border-radius: 8px;
+    border-top: 2px solid var(--gray-500);
+    padding: 20px;
+    text-align: center;
+}
+
+.emptyTask p:first-of-type {
+    font-weight: bolder;
+}
+.emptyTask p{
+    display: grid;
+    justify-content: center;
+}
+
+.clipBoard{
+    justify-content: center;
+    max-width: 45rem;
+    margin: 0rem auto 1rem;
+}
+
+.NumberAlign{
+    display: flex;
+}
+
+.qtdTask{
+    margin-top: -0.1rem;
+    color: var(--white);
+    padding: 0rem 0.5rem 0rem 0.5rem;
+    border-radius: 2rem;
+    background-color: var(--gray-400);
+}
+
+.inputForm {
+    margin-top: -1.8rem;
+    display: flex;
+    justify-content: center;
+}
+
+.inputForm input {
+    width: 39rem;
+    background: var(--gray-500);
+    border: 0;
+    border-radius: 8px;
+    padding: 1rem;
+    color: var(--gray-100);
+    margin-right: 0.5rem;
+    max-height: 3.25rem;
+}
+
+.inputForm button {
+    width: 5.6rem;
+    padding: 1rem 0.8rem;
+    border-radius: 8px;
+    border: 0;
+    color: var(--white);
+    background: var(--blue-dark);
+    height: 3.25rem;
+    display: flex;
+    justify-content: space-between;
+    
+
+    transition: backgorund-color 0.1s;
+}
+
+.inputForm button[type=submit]:hover{
+    background: var(--blue);
+}

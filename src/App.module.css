@@ -1,0 +1,6 @@
+.wrapper{
+  margin: 0rem auto;
+  grid-template-columns: 1;
+  justify-content: center;
+  max-width: 45rem;
+}

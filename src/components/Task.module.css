@@ -1,0 +1,79 @@
+/* TaskCard.module.css */
+
+.card {
+    display: flex;
+    align-items: center;
+    background-color: var(--gray-500);
+    border: 1px solid var(--gray-400);
+    border-radius: 10px;
+    padding: 16px;
+    margin: 8px 0;
+    transition: background-color 0.3s, border 0.3s;
+}
+
+.checked {
+    background-color: var(--gray-500);
+}
+
+.checkboxContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 16px;
+}
+
+.customCheckbox {
+    width: 24px;
+    height: 24px;
+    border: 2px solid var(--blue);
+    border-radius: 50%;
+    appearance: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.customCheckbox:checked {
+    background-color: var(--purple-dark);
+    border: 2px solid var(--purple-dark);
+}
+
+.customCheckbox:checked::after {
+    content: '✔';
+    color: var(--white);
+    font-size: 14px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text {
+    flex: 1;
+    font-size: 16px;
+    color: var(--white);
+}
+
+.textChecked {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.trashButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+}
+
+.trashButton:focus {
+    outline: none;
+}
+
+.trashIcon {
+    color: var(--gray-100);
+    transition: color 0.3s;
+}
+
+.trashButton:hover .trashIcon {
+    color: var(--danger); 
+}
